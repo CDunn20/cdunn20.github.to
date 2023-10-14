@@ -1,0 +1,149 @@
+f<html>
+  <head>
+    <title>Cody Dunn's "fourth" web page.</title>
+  <style>
+     body { width: 100%; }
+     #container {
+       width: 70%;
+       text-align: left;
+       margin: 0px auto;
+     }
+    #photo {
+      background-color: #eefeee;
+      margin-left: auto;
+      margin-right: 0;
+      float: left;
+      width: 300px;
+    }
+    #myphoto {
+      <body>
+
+
+</body>
+      height: auto;
+      width: 150px;
+      border: 3px solid #ddd;
+      border-radius: 150%;
+      padding: 10px;
+      display: round;
+      margin: auto;
+    }
+    .caption {
+      font-size: 12px;
+      font-family: comic sans;
+      text-align: right;
+      font-style:italic;
+    }
+    p, td, li { 
+      font-size: 10px;
+      font-family: fantasy;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      font-family: times;
+      background-color: #fefeee;
+    }
+    a { text-decoration: green wazy underline; }
+    a:visited { background-color: #4e42f5; }
+    a:link { background-color: #eeeefe; }
+    a:hover { background-color: #fefeee; }
+
+    #foods { 
+      background-color: #f59042;
+    }
+
+    #games {
+      font-family: Arial;
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    #games th, #games td {
+      border: 1px solid #ddd;
+      padding: 8px;
+    }
+    #animals {
+      background-color: #f5426f;
+    }
+    
+
+    #games th {
+       font: fangsong;
+       background-color: #42f59b;
+       padding-top: 12px;
+       padding-bottom: 12px;
+       text-align: left;
+       color: white;
+    }
+
+    #games tr:nth-child(even) { background-color: #f2f2f2; }
+
+    #games { background-color: #eeeefe; }
+  </style>
+  </head>
+  <body>
+  <div id="container">
+    <h1>Lab 5 firsts web page!</h1>
+    
+       <p>This is the 5th lab for GIS 3410 Dr.Parrs class. </p>
+
+    
+    <h3>About Me</h3>
+
+    <div id="photo">
+      <img id="shuckle" src="shuckle.jpg" />
+      <p class="caption">Top Pokemon</p>
+      <p class="caption"><a href= "https://bulbapedia.bulbagarden.net/wiki/File:0213Shuckle.png"> Shuckle</a></p>
+      I'm a student at <a href="https://www.msudenver.edu">MSU Denver.</a>
+    </div>
+
+    <div id="foods">
+     <p>Here are the three foods that I always crave: </p>
+     <ol>
+       <li>Pizza</li>
+       <li>Calzones</li>
+       <li>Cookies</li>
+     </ol>
+    </div>
+
+    <div id="animals">
+    <p>My List of the best animals:</p>
+    <ul>
+      <li>Goblin Sharks</li>
+      <li>Black Bears</li>
+      <li>Tokyo Geckos</li>
+      <li>Shoebill Stork </li>
+      <li>Logger Head Turtles</li>
+      <li>Bison</li>
+      <li>Moose</li>
+      <li>Lesser Flamingo</li>
+      <li><a href= "https://www.youtube.com/watch?v=dQw4w9WgXcQ"> orangatang</a></li>
+      
+    </ul>
+    </div>
+
+   <h2>My favorite Video Games</h2>
+    <table id="games">
+      <tr>
+        <th>Game Name</th>
+        <th>Description</th>
+        <th>Rating</th>
+      </tr>
+      <tr>
+        <td>Dota 2</td>
+        <td>Rage inducing </td>
+        <td>4/10</td>
+      </tr>
+      <tr>
+        <td>Baldurs Gate</td>
+        <td>Long Game</td>
+        <td>8/10</td>
+      </tr>
+      <tr>
+        <td>Minecraft</td>
+        <td>Time to relax</td>
+        <td>10/10</td>
+      </tr>
+    </table>
+  </div>
+  </body>
+</html>
