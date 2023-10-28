@@ -48,10 +48,11 @@
                   // check if the game has been won or lost
                   if (gameWon != true && gameLost != true) {
                     // erase the info box
+                    $("#info").text("");
 
                 
                     // use text to get the letter that was clicked on
-
+                    letter= $(this).text();
 
                     // make a line through the letter
 
