@@ -56,7 +56,7 @@
                     console.log("clicked on ",letter);
 
                     // make a line through the letter
-                    $(this).css("text-decoration", "line_through");
+                    $(this).css("text-decoration", "line-through");
 
                     // if the letter has already been clicked on, 
                     // let the user know it's already been tried
@@ -87,7 +87,16 @@
                       // with the letter that was clicked on
                       // replace the blanks with letter in blank
                       // and replace the letters with blanks in word
+                        while( word.includes(letter)){
+                            index = word.indexOf(letter);
+                            console.log("index of worrd it " , index);
+                            word = word.substring(0, index) + " " + word.substring((index +1));
+                            blank = blank.substring(0,index) + letter + blank.substring((index +1);
 
+                            $("#word").text(blank);
+                            console.log("word is ",word);
+                            console.log("blank is ", black);
+                        }
                      
                       // check if the player has won the game
 
