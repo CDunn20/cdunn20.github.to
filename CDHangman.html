@@ -69,12 +69,14 @@
                     } else if (! word.includes(letter)) {
 
                       // reduce the number of remaining tries by 1
-                        tries = tries -1
-                        %("#guesses").text("Guesses left: " + tries);
+                        tries = tries -1;
+                        $("#guesses").text("Guesses left: " + tries);
 
                       // are they out of tries? then they lost!
 
-                    
+                    if(tries <1) {
+                        gameLost = true;
+                        $("#info).text("Sorry, you are out of guesses. Better luck next time");
                     
                     // otherwise, put a line through it and
                     // add it to the found letters
