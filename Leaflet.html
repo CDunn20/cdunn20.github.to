@@ -34,7 +34,7 @@
 	
 	<script>
 
-	var map = L.map('map').setView([51.179, -1.826], 10);
+	var map = L.map('map').setView([51.179, -1.826], 20);
 
 	L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 		maxZoom: 19,
@@ -46,14 +46,14 @@
 			color: "brown",
 			radius:200
 		}).addTo(map);
-		cicle.bindPopup("The lesser known woodhenge. When people used to sit and party!");
+		cicle.bindPopup("The lesser known woodhenge. Where people used to sit and party!");
 		var polygon= L.polygon([
 			[51.19185089577226, -1.8467994473723262],
 			[51.19203182722649, -1.8435154977232098],
 			[51.18312010900058, -1.8425411390361088],
 			[51.18262244957154, -1.839076752593085]
 			]).addTo(map);
-		polygon.bindPopup("The Fargo Woods");
+		polygon.bindPopup("The Fargo Woods most likely the hunting gorund for the people that lived around stonehenge.");
 			
 		
 		
