@@ -41,6 +41,23 @@
 		attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 	}).addTo(map);
 		var marker = L.marker([51.179, -1.826]).addTo(map);
+		marker.bindPopup("The coolest stack of rock in the world!<br>Stonehedge").openPopup();
+		var cicle = L.circle([51.189430648879494, -1.7851670337868255],{ 
+			color: "brown",
+			radius:200
+		}).addTo(map);
+		cicle.bindPopup("The lesser known woodhenge. When people used to sit and party!");
+		var polygon= L.polygon([
+			[51.19185089577226, -1.8467994473723262],
+			[51.19203182722649, -1.8435154977232098],
+			[51.18312010900058, -1.8425411390361088],
+			[51.18262244957154, -1.839076752593085]
+			]).addTo(map);
+		polygon.bindPopup("The Fargo Woods");
+			
+		
+		
+		
 
 </script>
 
