@@ -68,7 +68,7 @@
 		// the control let's the user turn on / off layers -- ##3 here
       var layerControl = L.control.layers(basemap,null).addto(map);
 		// let's add the Denver ACS data -- ##4 here
-	$.GetJSON('./ACS_GeoJSON', function(data){	
+	$.GetJSON('./ACS GeoJSON', function(data){	
 		// convert file data to layer
 		acsDenver2021Layer = L.geoJSON(data).addTo(map);
 		// move map to layer
