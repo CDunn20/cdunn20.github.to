@@ -76,10 +76,10 @@
 		Colorvar = d > 80 ? '#4a1486' : 
 				d > 60 ? '#6a51a3' : 
 				d > 40 ? '#807dba' : 
-				d > 20 ? '#9e9ac8' : 
-				d > 15 ? '#bcbddc' : 
-					d > 10 ? '#dadaeb' : 
-					d > 0 ? '#efedf5' : 
+				d > 35 ? '#9e9ac8' : 
+				d > 30 ? '#bcbddc' : 
+					d > 20 ? '#dadaeb' : 
+					d > 10 ? '#efedf5' : 
 							'#fcfbfd';
 			styleReturn = {
 				fillColor	: Colorvar,
@@ -101,7 +101,7 @@
                                           {style : style1,
 			onEachFeature : function(feature, layer) {
 				layer.bindPopup("Median Age: " + 
-feature.properties.MEDIAN_AGE_ALL + "years old");
+feature.properties.MEDIAN_AGE_ALL + " years old");
 }
 					  }).addTo(map);
 		// move map to layer
